@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith - Amazon Affiliate Feed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="app-name">Zenith</div>
+        <button id="menu-btn">&#8942;</button>
+    </header>
+    <div id="feed"></div>
+    <div id="admin-modal">
+        <div id="admin-content">
+            <div id="password-form">
+                <input type="password" id="password-input" placeholder="Enter password">
+                <button id="submit-password">Submit</button>
+            </div>
+            <div id="admin-panel" style="display: none;">
+                <div id="admin-sidebar">
+                    <button id="show-post-form">New Post</button>
+                    <button id="show-posts">Posts</button>
+                </div>
+                <div id="admin-main">
+                    <div id="post-form">
+                        <input type="file" id="media-input" accept="image/*,video/*">
+                        <textarea id="description-input" placeholder="Product description"></textarea>
+                        <input type="url" id="link-input" placeholder="Amazon product link">
+                        <button id="submit-post">Post</button>
+                    </div>
+                    <div id="posts-view" style="display: none;">
+                        <button id="back-to-form">Back</button>
+                        <div id="posts-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
